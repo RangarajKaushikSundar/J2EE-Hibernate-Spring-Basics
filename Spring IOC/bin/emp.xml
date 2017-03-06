@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean name="emp" class="com.cg.ioc.Employee">
+		<property name="empno" value="1999"/>
+		<property name="name" value="Miani"/>
+		<property name="list">
+				<list>
+					<value>miani@gmail.com</value>
+					<value>miani@hotmail.com</value>
+				</list>
+		</property>
+		<property name="exp">
+			<map>
+				<entry  key="IBM" value="HMR"></entry>
+			</map>
+		</property>
+	</bean>
+	<!-- <bean name="employee" class="com.jsl.spring.di.Employee">
+			<property name="empno" value="1001"/>
+			<property name="ename" value="Krish"/>
+			<property name="address"></property>
+				
+			<property name="coutry" value="India"></property>
+	</bean>
+			
+			</property> -->
+			
+			<bean  class="com.jsl.spring.di.Address">
+				<property name="city" value="Bangalore"/>
+				<property name="state" value="Karnataka"/>
+	</bean>
+	
+
+
+</beans>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="person" class="com.cg.inheritance.Person">
+			<property name="fname" value="miani"></property>
+			<property name="lname" value="lakshman"></property>
+	
+	</bean>
+	<bean id="employee" class="com.cg.inheritance.Employee" parent="person">
+			<property name="email" value="lakshman.miani@gmail.com"></property>
+			<property name="salary" value="450000"></property>
+	</bean>
+
+</beans>

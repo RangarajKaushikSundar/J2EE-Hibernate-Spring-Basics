@@ -1,0 +1,14 @@
+<tablib>
+		<tlib-version>1.0</tlib-version>
+		<jsp-version>2.0</jsp-version>
+		<description>Date format</description>
+		<tag>
+		<body-content>empty</body-content>
+			<name>fdate</name>
+			<tag-class>com.cg.ct.MyDateFormat</tag-class>
+			<attribute>
+				<name>format</name>
+				<required>true</required>
+			</attribute>
+		</tag>
+</tablib>

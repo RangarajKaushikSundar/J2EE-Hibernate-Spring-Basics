@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.cg.hibernate.HibernateBean" table="MOBILE_SHOP">
+		
+		<id name="mobile_id" column="MOBILE_ID">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="mobile_name"> <column name="MOBILE_NAME">
+		</column>
+		</property>
+		
+		<property name="mobile_make" > <column name="MOBILE_MAKE"></column>
+		</property>
+		
+		<property name="mobile_price" > <column name="MOBILE_PRICE"></column>
+		</property>
+		
+	</class>
+</hibernate-mapping>
